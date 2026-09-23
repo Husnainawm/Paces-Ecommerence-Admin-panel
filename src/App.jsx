@@ -1,8 +1,17 @@
 import React from 'react'
+import Navbarone from './Component/Navbars/Navbar'
 
 const App = () => {
   return (
-    <div>App</div>
+    <>
+
+
+    <div className='bg-black h-full text-textCol'>
+
+    <Navbarone/>
+
+    </div>
+    </>
   )
 }
 
