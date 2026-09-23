@@ -2,7 +2,11 @@ import React from 'react'
 
 const Navbarone = () => {
   return (
-    <div>hello</div>
+    <>
+    <div className='flex fixed top-0 w-full h-20 bg'>
+
+    </div>
+    </>
   )
 }
 
