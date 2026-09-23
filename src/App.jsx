@@ -1,8 +1,9 @@
 import React from 'react'
+import Navbarone from './Component/Navbars/Navbar-one'
 
 const App = () => {
   return (
-    <div>App</div>
+    <Navbarone/>
   )
 }
 
