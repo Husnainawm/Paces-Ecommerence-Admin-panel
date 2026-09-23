@@ -5,11 +5,10 @@ import Sidebar from './Component/Navbars/Sidebar'
 const App = () => {
   return (
     <>
-    
-
-      <div className='bg-black h-full text-textCol flex w-full'>
+      <div className='bg-black h-full text-textCol w-full'>
     <Navbarone/>
-    </div>
+    <Sidebar/>
+       </div>
 
     </>
   )
