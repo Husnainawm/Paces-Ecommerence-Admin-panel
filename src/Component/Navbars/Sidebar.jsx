@@ -5,6 +5,8 @@ import CustomPages from '../SidebarDashboards/CustomPages';
 import Layouts from '../SidebarDashboards/Layout';
 import ComponentBoard from '../SidebarDashboards/ComponentBoard';
 import MenuBoard from '../SidebarDashboards/MenuBoard';
+import { Star, CircleX } from 'lucide-react';
+
 
       
 
@@ -16,7 +18,7 @@ const Sidebar = () => {
 
     
 
-    <div className='w-61.25 px-5 h-lvh pt-20 bg-[#1e1f27] flex flex-col gap-2 overflow-y-auto'>
+    <div className='w-61.25 px-5 h-lvh pt-20 pb-20 [&::-webkit-scrollbar]:hidden bg-[#1e1f27] flex flex-col gap-2 overflow-y-auto'>
       <div className='text-sm'>
         Main
       </div>
@@ -41,6 +43,14 @@ const Sidebar = () => {
         Menu
       </div>
       <MenuBoard/>
+      <div className='h-6 flex items-center gap-5 opacity-60'>
+        <CircleX  size={16}/>
+        Disable Menu
+      </div>
+      <div className='h-10 text-white p-2 rounded flex items-center gap-5 bg-blueCol '>
+        <Star size={16}/>
+        Disable Menu
+      </div>
     </div>
 
     </>
