@@ -8,7 +8,7 @@ import {
   Maximize,
   Palette,
   Settings,
-  CircleDot 
+  CircleDot
 } from "lucide-react";
 
 const Navbarone = () => {
@@ -16,8 +16,8 @@ const Navbarone = () => {
     <>
       <div className="w-full h-16.5 flex fixed top-0">
         <div className="w-61.25 px-5 h-16.5 flex items-center justify-between bg-[#1e1f27]">
-           <img className="w-22" src="public\logo.png" />
-           <CircleDot className="hover:text-white" strokeWidth={3} size={20}/>
+          <img className="w-22" src="public\logo.png" />
+          <CircleDot className="hover:text-white" strokeWidth={3} size={20} />
         </div>
         <div className="flex flex-1 top-0 right-0 h-16.5 bg-backCol px-5">
           <div className="w-full flex items-center gap-7">

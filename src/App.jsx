@@ -7,12 +7,12 @@ const App = () => {
   return (
     <>
       <div className='bg-black h-full text-textCol w-full'>
-    <Navbarone/>
-    <div className='flex'>
-      <Sidebar/>
-    <Homepage/>
-    </div>
-    </div>
+        <Navbarone />
+        <div className='flex'>
+          <Sidebar />
+          <Homepage />
+        </div>
+      </div>
 
     </>
   )
