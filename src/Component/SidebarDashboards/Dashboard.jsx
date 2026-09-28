@@ -26,11 +26,11 @@ const Dashboard = () => {
       >
         <div className="flex items-center gap-5">
           <dashboardItem.icon size={24} lg:size={18} />
-          <span className="text-sm font-medium hidden lg:flex">{dashboardItem.label}</span>
+          <span className="text-sm font-medium ">{dashboardItem.label}</span>
         </div>
         <ChevronDown
           size={16}
-          className={`transition-transform ${isOpen ? 'rotate-180' : ''}, hidden lg:flex`}
+          className={`transition-transform ${isOpen ? 'rotate-180' : ''}`}
         />
       </div>
       {isOpen && (

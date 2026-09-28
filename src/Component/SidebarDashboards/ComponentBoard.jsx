@@ -112,11 +112,11 @@ const ComponentBoard = () => {
           >
             <div className="flex items-center gap-3">
               <item.symbol si={24} lg:size={18} />
-              <span className="text-sm font-medium, hidden lg:flex">{item.label}</span>
+              <span className="text-sm font-medium">{item.label}</span>
             </div>
             <ChevronDown
               size={16}
-              className={`transition-transform ${isOpen === i ? 'rotate-180' : ''}, hidden lg:flex`}
+              className={`transition-transform ${isOpen === i ? 'rotate-180' : ''}`}
             />
           </div>
 
