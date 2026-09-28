@@ -10,11 +10,15 @@ import {
   Settings,
   CircleDot
 } from "lucide-react";
+import MegaMenu from "./MegaMenu";
+import AppsMenu from "./AppMenu";
+import LanguageMenu from "./LanguageMenu";
+import ProfileMenu from "./ProfileMenu";
 
 const Navbarone = () => {
   return (
     <>
-      <div className="w-full h-16.5 flex fixed top-0">
+      <div className="w-full h-16.5 flex fixed top-0 z-50">
         <div className="w-61.25 px-5 h-16.5 flex items-center justify-between bg-[#1e1f27]">
           <img className="w-22" src="public\logo.png" />
           <CircleDot className="hover:text-white" strokeWidth={3} size={20} />
@@ -31,14 +35,8 @@ const Navbarone = () => {
                 placeholder="Quick Search..."
               />
             </div>
-            <div className=" flex items-center px-2 hover:text-white ">
-              <p>Mega Menu </p>
-              <ChevronDown className="pt-1" size={20} strokeWidth={2.25} />
-            </div>
-            <div className=" flex items-center px-2  hover:text-white">
-              <p>App </p>
-              <ChevronDown className="pt-1" size={20} strokeWidth={2.25} />
-            </div>
+            <MegaMenu/>
+            <AppsMenu/>
           </div>
           <div className="flex justify-center gap-3 items-center">
             <div className="px-1.5 hover:text-white">
@@ -59,32 +57,13 @@ const Navbarone = () => {
             <div className="px-1.5 animate-spin hover:text-white">
               <Settings strokeWidth={2.5} />
             </div>
-            <div className="flex w-13 gap-2 items-center">
-              <img
-                className="h-5 w-5 objectcover rounded-full"
-                src="src\assets\Flags\us.svg"
-              />
-              <p className="hover:text-white">EN</p>
-            </div>
+           
             <div className="flex gap-5 items-center">
+              <LanguageMenu/>
               <div>
                 <p>|</p>
               </div>
-              <div className="flex items-center">
-                <div className="w-10 h-8 pr-2">
-                  <img
-                    className="object-cover rounded-full"
-                    src=".\src\assets\user-1.jpg"
-                  />
-                </div>
-                <div className=" w-18">
-                  <h5 className="text-sm">David Dev</h5>
-                  <p className="text-[12px] hover:text-white">Admin Head</p>
-                </div>
-                <div className="flex items-center">
-                  <ChevronDown className="pt-1" size={20} strokeWidth={2.25} />
-                </div>
-              </div>
+              <ProfileMenu />
             </div>
           </div>
         </div>
