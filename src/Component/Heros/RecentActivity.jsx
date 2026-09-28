@@ -45,7 +45,7 @@ const RecentActivity = () => {
 
       {/* Scrollable timeline */}
       <div
-        className="max-h-[400px] overflow-y-auto px-6 py-5
+        className="max-h-100 overflow-y-auto px-6 py-5
           [&::-webkit-scrollbar]:w-1
           [&::-webkit-scrollbar-track]:bg-transparent
           [&::-webkit-scrollbar-thumb]:bg-gray-600
