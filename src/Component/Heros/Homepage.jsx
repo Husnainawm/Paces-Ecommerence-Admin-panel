@@ -6,6 +6,8 @@ import WeeklyPerformance from './WeeklyPerformance'
 import SalesReport from './SalesReports'
 import TopProducts from './SalesProduct'
 import RecentOrders from './RecentOrder'
+import RevenueByLocations from './Mapcomponent'
+import RecentActivity from './RecentActivity'
 
 const Homepage = () => {
     return (
@@ -20,9 +22,10 @@ const Homepage = () => {
             <SalesReport/>
             <TopProducts/>
             </div>
-            <div className='flex flex-wrap pt-4'>
+            <div className='flex flex-wrap pt-4 gap-4'>
                 <RecentOrders/>
-                
+                <RevenueByLocations/>
+                <RecentActivity></RecentActivity>
             </div>
         </div>
     )
