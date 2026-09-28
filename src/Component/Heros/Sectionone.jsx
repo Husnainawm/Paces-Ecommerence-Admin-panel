@@ -53,7 +53,7 @@ const Sectionone = () => {
 
     return (
         <>
-            <div className='w-[60%] gap-5 flex flex-wrap'>
+            <div className='w-[41%] gap-5 flex flex-wrap'>
                 <div className='h-45 w-80 flex flex-col  bg-backCol ' >
                     <div className='p-5 pb-0 flex flex-1 justify-between items-center'>
                         <div>
