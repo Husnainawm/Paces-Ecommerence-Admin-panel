@@ -10,3 +10,11 @@
     --color-textCol: #AAB8C5;
 }
 
+html {
+  transition: filter 0.3s ease;
+}
+
+html.mono-mode {
+  filter: grayscale(1);
+}
+

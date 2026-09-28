@@ -14,8 +14,22 @@ import MegaMenu from "./MegaMenu";
 import AppsMenu from "./AppMenu";
 import LanguageMenu from "./LanguageMenu";
 import ProfileMenu from "./ProfileMenu";
+import ThemeMenu from "./ThemeMenu";
+import GridMenu from "./GrifMenu";
+import NotificationMenu from "./NotificationMenu";
+import { useState, useEffect } from 'react'
+import FullscreenToggle from "./FullScreen";
 
 const Navbarone = () => {
+
+   const [isMono, setIsMono] = useState(false)
+
+  useEffect(() => {
+    document.documentElement.classList.toggle('mono-mode', isMono)
+  }, [isMono])
+
+
+
   return (
     <>
       <div className="w-full h-16.5 flex fixed top-0 z-50">
@@ -39,21 +53,13 @@ const Navbarone = () => {
             <AppsMenu/>
           </div>
           <div className="flex justify-center gap-3 items-center">
-            <div className="px-1.5 hover:text-white">
-              <Moon />
-            </div>
-            <div className="px-1.5 hover:text-white">
-              <LayoutGrid />
-            </div>
-            <div className="px-1.5 hover:text-white">
-              <Bell strokeWidth={2.5} />
-            </div>
-            <div className="px-1.5 hover:text-white">
-              <Maximize strokeWidth={2.5} />
-            </div>
-            <div className="px-1.5 hover:text-white">
-              <Palette strokeWidth={2.5} />
-            </div>
+            <ThemeMenu />            
+            <GridMenu/>
+            <NotificationMenu/>
+           <FullscreenToggle />
+            <button onClick={() => setIsMono(!isMono)} className="px-1.5 hover:text-white">
+      <Palette strokeWidth={2.5} />
+    </button>
             <div className="px-1.5 animate-spin hover:text-white">
               <Settings strokeWidth={2.5} />
             </div>
