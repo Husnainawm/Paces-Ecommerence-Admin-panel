@@ -3,6 +3,9 @@ import Nav from './Nav'
 import Sectionone from './Sectionone'
 import Dountgraph from './Dountgraph'
 import WeeklyPerformance from './WeeklyPerformance'
+import SalesReport from './SalesReports'
+import TopProducts from './SalesProduct'
+import RecentOrders from './RecentOrder'
 
 const Homepage = () => {
     return (
@@ -12,6 +15,14 @@ const Homepage = () => {
             <Sectionone />
             <Dountgraph/>
             <WeeklyPerformance/>
+            </div>
+            <div className='flex flex-wrap w-full pt-4 gap-5'>
+            <SalesReport/>
+            <TopProducts/>
+            </div>
+            <div className='flex flex-wrap pt-4'>
+                <RecentOrders/>
+                
             </div>
         </div>
     )
