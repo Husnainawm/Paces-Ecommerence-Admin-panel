@@ -8,9 +8,11 @@ import TopProducts from './SalesProduct'
 import RecentOrders from './RecentOrder'
 import RevenueByLocations from './Mapcomponent'
 import RecentActivity from './RecentActivity'
+import Footer from './Footer'
 
 const Homepage = () => {
     return (
+        <>
         <div className='px-5 h-lvh pt-20 [&::-webkit-scrollbar]:hidden flex flex-1 flex-col gap-2 overflow-y-auto'>
             <Nav />
             <div className='flex wrap gap-5'>
@@ -25,9 +27,14 @@ const Homepage = () => {
             <div className='flex flex-wrap pt-4 gap-4'>
                 <RecentOrders/>
                 <RevenueByLocations/>
-                <RecentActivity></RecentActivity>
+                <RecentActivity/>
             </div>
+            <div className='-mx-5'>
+            <Footer/>
+            </div>
+            
         </div>
+        </>
     )
 }
 
