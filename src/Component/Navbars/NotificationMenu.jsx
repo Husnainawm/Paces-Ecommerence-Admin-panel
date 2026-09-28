@@ -62,13 +62,13 @@ const NotificationMenu = () => {
       {/* Bell + red count badge */}
       <button onClick={() => setIsOpen(!isOpen)} className="relative px-1.5 hover:text-white">
         <Bell strokeWidth={2.5} />
-        <span className="absolute -top-2 -right-1 w-4.5 h-4.5 rounded-full bg-[#f7577e] text-white text-[10px] font-semibold flex items-center justify-center">
+        <span className="absolute -top-2 -right-1 w-4.5 h-4.5 rounded-full bg-redCol text-white text-[10px] font-semibold flex items-center justify-center">
           {unreadCount}
         </span>
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 top-full mt-4 w-[360px] bg-[#1e1f27] border border-gray-800 rounded-lg z-50">
+        <div className="absolute right-0 top-full mt-4 w-90 bg-[#1e1f27] border border-gray-800 rounded-lg z-50">
           {/* Header */}
           <div className="flex justify-between items-center px-5 py-4 border-b border-gray-800">
             <p className="font-semibold text-gray-200">Notifications</p>
@@ -79,7 +79,7 @@ const NotificationMenu = () => {
 
           {/* List (scrollable) */}
           <div
-            className="max-h-[320px] overflow-y-auto
+            className="max-h-80 overflow-y-auto
               [&::-webkit-scrollbar]:w-1
               [&::-webkit-scrollbar-track]:bg-transparent
               [&::-webkit-scrollbar-thumb]:bg-gray-600
@@ -89,7 +89,7 @@ const NotificationMenu = () => {
               const Badge = n.badge
               const Icon = n.icon
               return (
-                <div key={n.name} className="flex gap-3 px-5 py-3 hover:bg-[#252630]">
+                <div key={n.name} className="flex gap-3 px-5 py-3 hover:bg-backCol">
                   {/* Avatar + corner badge */}
                   <div className="relative w-11 h-11 shrink-0">
                     {n.img ? (

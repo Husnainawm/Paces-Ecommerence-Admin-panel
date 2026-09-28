@@ -39,13 +39,13 @@ const GridMenu = () => {
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 top-full mt-4 w-[330px] grid grid-cols-3 gap-2 p-3 bg-[#1e1f27] border border-gray-800 rounded-lg z-50">
+        <div className="absolute right-0 top-full mt-4 w-82.5 grid grid-cols-3 gap-2 p-3 bg-[#1e1f27] border border-gray-800 rounded-lg z-50">
           {items.map((item, i) => {
             // Beech wala cell: sirf pink circle, click nahi hota
             if (item.center) {
               return (
                 <div key={i} className="flex items-center justify-center">
-                  <div className="w-8 h-8 rounded-full bg-[#f7577e] flex items-center justify-center">
+                  <div className="w-8 h-8 rounded-full bg-redCol flex items-center justify-center">
                     <Target size={16} className="text-white" />
                   </div>
                 </div>
@@ -57,7 +57,7 @@ const GridMenu = () => {
               <a
                 key={item.label}
                 href="#"
-                className="flex flex-col items-center gap-2 py-4 border border-dashed border-gray-700 rounded hover:bg-[#252630] text-sm text-gray-300 hover:text-white"
+                className="flex flex-col items-center gap-2 py-4 border border-dashed border-gray-700 rounded hover:bg-backCol text-sm text-gray-300 hover:text-white"
               >
                 <div className={`w-9 h-9 rounded-full flex items-center justify-center ${item.circle}`}>
                   <Icon size={18} className={item.color} />

@@ -12,8 +12,8 @@ const App = () => {
         <div className='flex'>
           <Sidebar />
           <Homepage />  
-          </div>
         </div>
+      </div>
 
     </>
   )
