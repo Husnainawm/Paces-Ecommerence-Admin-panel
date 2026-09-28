@@ -24,7 +24,7 @@ const Dountgraph = () => {
 
         const colors =["red","green","blue"]
   return (
-    <div className='w-[26%] bg-backCol p-5'>
+    <div className='w-[48.25%] xl:w-[26%] bg-backCol p-5'>
         <div className='flex justify-between'>
             <p>Store Performance Analytics</p>
             <button className='flex gap-4 items-center h-8 border rounded p-3'><RefreshCw size={16}/>Refresh</button>

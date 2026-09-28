@@ -69,7 +69,7 @@ const RecentOrders = () => {
   }
 
   return (
-    <div className="bg-backCol rounded-lg text-gray-300 w-[44%]">
+    <div className="bg-backCol rounded-lg text-gray-300 w-full xl:w-[44%]">
       {/* Header */}
       <div className="flex justify-between items-center px-6 py-5">
         <p className="">

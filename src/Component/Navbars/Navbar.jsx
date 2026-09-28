@@ -1,11 +1,6 @@
 import React from "react";
 import {
   Search,
-  Moon,
-  ChevronDown,
-  LayoutGrid,
-  Bell,
-  Maximize,
   Palette,
   Settings,
   CircleDot
@@ -39,7 +34,7 @@ const Navbarone = () => {
         </div>
         <div className="flex flex-1 top-0 right-0 h-16.5 bg-backCol px-5">
           <div className="w-full flex items-center gap-7">
-            <div className="flex justify-center gap-1 w-56 border-0 rounded-3xl h-8 items-center bg-[#2e2d3c]">
+            <div className=" hidden lg:flex justify-center gap-1 w-56 border-0 rounded-3xl h-8 items-center bg-[#2e2d3c]">
               <div>
                 <Search size={16} strokeWidth={2.5} />
               </div>
