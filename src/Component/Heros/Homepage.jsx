@@ -15,7 +15,7 @@ const Homepage = () => {
         <>
         <div className='px-5 h-lvh pt-20 [&::-webkit-scrollbar]:hidden flex flex-1 flex-col gap-2 overflow-y-auto'>
             <Nav />
-            <div className='flex wrap gap-5'>
+            <div className='flex flex-wrap gap-5'>
             <Sectionone />
             <Dountgraph/>
             <WeeklyPerformance/>

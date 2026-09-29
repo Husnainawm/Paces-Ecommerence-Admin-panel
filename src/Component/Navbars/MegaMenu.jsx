@@ -34,7 +34,7 @@ const MegaMenu = () => {
   }, [])
 
   return (
-    <div ref={menuRef} className="relative">
+    <div ref={menuRef} className="relative hidden sm:flex">
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center px-2 hover:text-white"

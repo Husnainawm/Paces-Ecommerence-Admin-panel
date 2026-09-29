@@ -53,8 +53,8 @@ const Sectionone = () => {
 
     return (
         <>
-            <div className='w-[41%] gap-5 flex flex-wrap'>
-                <div className='h-45 w-80 flex flex-col  bg-backCol ' >
+            <div className='w-full xl:w-[41%] gap-5 flex flex-wrap'>
+                <div className='h-45 w-full sm:w-[48%] lg:w-[23%] xl:w-[47%] flex flex-col  bg-backCol ' >
                     <div className='p-5 pb-0 flex flex-1 justify-between items-center'>
                         <div>
                             <p className='text-sm'>
@@ -64,16 +64,16 @@ const Sectionone = () => {
                                 David Dev!
                             </p>
                         </div>
-                        <img className='h-20' src="public\email-campaign.svg" alt="" />
+                        <img className='h-20 hidden xl:block' src="public\email-campaign.svg" alt="" />
                     </div>
                     <div className='flex justify-between p-2 h-13 bg-gray-700'>
                         <div className='flex items-center gap-1'>
                             <Calendar size={15} />
-                            <p>{today}</p>
+                            <p className='text-sm'>{today}</p>
                         </div>
                         <div className='flex items-center gap-1'>
                             <Clock size={15} />
-                            <p>{time.toLocaleTimeString()}</p>
+                            <p className='text-sm'>{time.toLocaleTimeString()}</p>
                         </div>
                     </div>
                 </div>
@@ -81,11 +81,11 @@ const Sectionone = () => {
                 {
                     order.map((elem, idx) => {
                         return (
-                            <div key={idx} className='h-45 w-80 flex justify-between p-5  bg-backCol' >
+                            <div key={idx} className='h-45 w-full sm:w-[48%] lg:w-[23%] xl:w-[47%] flex justify-between p-5  bg-backCol' >
                                 <div className='flex flex-col justify-between h-full'>
                                 <p className='text-sm'>{elem.Sector}</p>
                                 <p className='text-xl font-bold '>{elem.value}</p>
-                                <div className=' flex gap-3'>
+                                <div className=' flex flex-col xl:flex-row gap-3'>
                                     <p    key={idx}  
                                     className={   idx < 2 
                                          ? 'text-redCol flex text-sm gap-1 items-center'  : 'text-greenCol flex text-sm gap-1 items-center' 

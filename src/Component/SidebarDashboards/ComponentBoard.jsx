@@ -111,7 +111,7 @@ const ComponentBoard = () => {
             className="flex items-center justify-between py-2 rounded-lg cursor-pointer text-white"
           >
             <div className="flex items-center gap-3">
-              <item.symbol size={18} />
+              <item.symbol si={24} lg:size={18} />
               <span className="text-sm font-medium">{item.label}</span>
             </div>
             <ChevronDown

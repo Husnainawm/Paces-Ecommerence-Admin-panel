@@ -33,7 +33,7 @@ const GridMenu = () => {
   }, [])
 
   return (
-    <div ref={menuRef} className="relative">
+    <div ref={menuRef} className="relative hidden lg:block">
       <button onClick={() => setIsOpen(!isOpen)} className="px-1.5 hover:text-white">
         <LayoutGrid />
       </button>

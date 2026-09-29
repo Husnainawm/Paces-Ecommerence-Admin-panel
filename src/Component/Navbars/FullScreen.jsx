@@ -20,7 +20,7 @@ const FullscreenToggle = () => {
   }
 
   return (
-    <button onClick={toggleFullscreen} className="px-1.5 hover:text-white">
+    <button onClick={toggleFullscreen} className="px-1.5 hover:text-white hidden sm:flex">
       {isFullscreen ? (
         <Minimize strokeWidth={2.5} />
       ) : (

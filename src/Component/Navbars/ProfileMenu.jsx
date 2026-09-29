@@ -53,15 +53,17 @@ const ProfileMenu = () => {
         <div className="w-10 h-8 pr-2">
           <img className="object-cover rounded-full" src={userImg} alt="David Dev" />
         </div>
-        <div className="text-left w-18">
+        <div className=" hidden lg:block text-left w-18">
           <h5 className="text-sm">David Dev</h5>
-          <p className="text-[12px] hover:text-white">Admin Head</p>
+          <p className=" text-[12px] hover:text-white">Admin Head</p>
         </div>
+        <div className='hidden lg:block'>
         <ChevronDown
           className={`pt-1 transition-transform ${isOpen ? 'rotate-180' : ''}`}
           size={20}
           strokeWidth={2.25}
         />
+        </div>
       </button>
 
       {/* Dropdown */}

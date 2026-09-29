@@ -25,8 +25,8 @@ const Dashboard = () => {
         className="flex items-center justify-between py-2 rounded-lg cursor-pointer text-white"
       >
         <div className="flex items-center gap-5">
-          <dashboardItem.icon size={18} />
-          <span className="text-sm font-medium">{dashboardItem.label}</span>
+          <dashboardItem.icon size={24} lg:size={18} />
+          <span className="text-sm font-medium ">{dashboardItem.label}</span>
         </div>
         <ChevronDown
           size={16}

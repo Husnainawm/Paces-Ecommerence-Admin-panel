@@ -61,7 +61,7 @@ const NotificationMenu = () => {
     <div ref={menuRef} className="relative">
       {/* Bell + red count badge */}
       <button onClick={() => setIsOpen(!isOpen)} className="relative px-1.5 hover:text-white">
-        <Bell strokeWidth={2.5} />
+        <Bell size={22} lg:size={28} strokeWidth={2.5} />
         <span className="absolute -top-2 -right-1 w-4.5 h-4.5 rounded-full bg-redCol text-white text-[10px] font-semibold flex items-center justify-center">
           {unreadCount}
         </span>

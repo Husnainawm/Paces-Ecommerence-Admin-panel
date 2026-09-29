@@ -40,7 +40,7 @@ const ThemeMenu = () => {
   }
 
   return (
-    <div ref={menuRef} className="relative">
+    <div ref={menuRef} className="relative hidden sm:flex">
       <button onClick={() => setIsOpen(!isOpen)} className="px-1.5 hover:text-white">
         <Moon />
       </button>
