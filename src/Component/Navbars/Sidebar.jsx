@@ -18,10 +18,10 @@ const Sidebar = ({ isOpen, onClose }) => {
     {isOpen && (
         <div
           onClick={onClose}
-          className='fixed inset-0 bg-black/50 z-[55] lg:hidden'
+          className='fixed inset-0 bg-black/50 z-55 lg:hidden'
         />
       )}
-      <div className={`fixed inset-y-0 left-0 z-[60] w-61.25 px-5 h-lvh pt-4 pb-20 lg:pt-20
+      <div className={`fixed inset-y-0 left-0 z-60 w-61.25 px-5 h-lvh pt-4 pb-20 lg:pt-20
           [&::-webkit-scrollbar]:hidden bg-[#1e1f27] flex flex-col gap-2 overflow-y-auto
           transition-transform duration-300
           ${isOpen ? 'translate-x-0' : '-translate-x-full'}
