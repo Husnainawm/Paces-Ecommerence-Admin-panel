@@ -13,8 +13,8 @@ const App = () => {
     <>
       <div className='bg-black h-full text-textCol w-full'>
         <Navbarone onMenuClick={() => setSidebarOpen(true)} />
-        <div className='flex'>
-          <Sidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
+        <div className='grid grid-cols-1 lg:grid-cols-[245px_auto]'>
+          <Sidebar className='' isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
           <Homepage />  
         </div>
       </div>

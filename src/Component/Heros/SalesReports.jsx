@@ -26,7 +26,7 @@ const SalesReport = () => {
   const [activeTab, setActiveTab] = useState('Monthly')
 
   return (
-    <div className="bg-backCol rounded-lg text-gray-300 w-full xl:w-[50%]">
+    <div className="bg-backCol rounded-lg text-gray-300 w-full">
       {/* Header + tabs */}
       <div className="flex justify-between items-center px-6 pt-5 border-b border-dashed border-gray-700">
         <p className="pb-4 font-medium">

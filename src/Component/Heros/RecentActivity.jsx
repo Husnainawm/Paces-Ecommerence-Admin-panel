@@ -34,7 +34,7 @@ const activities = [
 
 const RecentActivity = () => {
   return (
-    <div className="bg-backCol rounded-lg text-gray-300 flex-1">
+    <div className="bg-backCol rounded-lg text-gray-300 w-full">
       {/* Header */}
       <div className="flex justify-between items-center px-6 py-5 border-b border-dashed border-gray-700">
         <p className="font-medium">Recent Activity</p>

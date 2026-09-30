@@ -27,7 +27,7 @@ const DumbbellShape = ({ x, y, width, height }) => {
 const WeeklyPerformance = () => {
   return (
     <>
-    <div className='flex-1 bg-backCol p-5'>
+    <div className='w-full bg-backCol p-5'>
       <div className="flex justify-between items-center mb-4">
         <p className="text-gray-300 font-medium">Weekly Performance Insights</p>
         <button className="border border-gray-600 rounded p-1.5">
