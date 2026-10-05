@@ -14,7 +14,7 @@ const Homepage = () => {
     return (
         <>
         <div className='px-5 h-lvh pt-20 [&::-webkit-scrollbar]:hidden gap-2 overflow-y-auto'>
-            <Nav />
+            <Nav Page="eCommerence" />
             <div className='grid sm:grid-cols-2 lg:grid-cols-[41%_auto_30%] gap-4'>
             <Sectionone />
             <Dountgraph/>

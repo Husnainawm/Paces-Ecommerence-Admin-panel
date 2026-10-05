@@ -15,7 +15,8 @@ import GridMenu from "./GrifMenu";
 import NotificationMenu from "./NotificationMenu";
 import { useState, useEffect } from 'react'
 import FullscreenToggle from "./FullScreen";
-import LogoIcon from '../../assets/paces-logo-icon.png'
+import LogoIcon from '../../assets/paces-logo-icon.png';
+import { Link } from "react-router-dom";
 
 const Navbarone = ({ onMenuClick }) => {
 
@@ -31,8 +32,9 @@ const Navbarone = ({ onMenuClick }) => {
     <>
       <div className="w-full h-16.5 grid grid-cols-[68px_auto] lg:grid-cols-[245px_auto] fixed top-0 z-50">
         <div className="w-17 lg:w-61.25 px-5 h-16.5 flex items-center justify-between bg-[#1e1f27]">
-          <img className="w-22 hidden lg:block" src="public\logo.png" />
+         <Link to="/"><img className="w-22 hidden lg:block" src="public\logo.png" />
           <img className="flex lg:hidden" src={LogoIcon} alt="" />
+          </Link>
           <CircleDot className="hidden lg:flex hover:text-white" strokeWidth={3} size={20} />
         </div>
         <div className="flex flex-1 top-0 right-0 h-16.5 bg-backCol px-5">
