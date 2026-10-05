@@ -13,19 +13,19 @@ import Footer from './Footer'
 const Homepage = () => {
     return (
         <>
-        <div className='px-5 h-lvh pt-20 [&::-webkit-scrollbar]:hidden flex flex-1 flex-col gap-2 overflow-y-auto'>
-            <Nav />
-            <div className='flex flex-wrap gap-5'>
+        <div className='px-5 h-lvh pt-20 [&::-webkit-scrollbar]:hidden gap-2 overflow-y-auto'>
+            <Nav Page="eCommerence" />
+            <div className='grid sm:grid-cols-2 lg:grid-cols-[41%_auto_30%] gap-4'>
             <Sectionone />
             <Dountgraph/>
             <WeeklyPerformance/>
             </div>
-            <div className='flex flex-wrap w-full pt-4 gap-5'>
+            <div className='grid grid-cols-[100%] lg:grid-cols-2 pt-4 gap-4'>
             <SalesReport/>
             <TopProducts/>
             </div>
-            <div className='flex flex-wrap pt-4 gap-4'>
-                <RecentOrders/>
+            <div className='grid grid-cols-[100%] sm:grid-cols-2 lg:grid-cols-[45%_1fr_1fr] pt-4 gap-4'>
+                <RecentOrders/> 
                 <RevenueByLocations/>
                 <RecentActivity/>
             </div>

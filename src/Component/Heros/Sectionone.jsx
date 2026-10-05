@@ -53,8 +53,8 @@ const Sectionone = () => {
 
     return (
         <>
-            <div className='w-full xl:w-[41%] gap-5 flex flex-wrap'>
-                <div className='h-45 w-full sm:w-[48%] lg:w-[23%] xl:w-[47%] flex flex-col  bg-backCol ' >
+            <div className='w-full gap-4 col-start-1 sm:col-end-3 lg:col-end-2  grid grid-cols-1 sm:grid-cols-2'>
+                <div className='h-45 w-full flex flex-col  bg-backCol ' >
                     <div className='p-5 pb-0 flex flex-1 justify-between items-center'>
                         <div>
                             <p className='text-sm'>
@@ -81,7 +81,7 @@ const Sectionone = () => {
                 {
                     order.map((elem, idx) => {
                         return (
-                            <div key={idx} className='h-45 w-full sm:w-[48%] lg:w-[23%] xl:w-[47%] flex justify-between p-5  bg-backCol' >
+                            <div key={idx} className='h-45 flex justify-between p-5  bg-backCol' >
                                 <div className='flex flex-col justify-between h-full'>
                                 <p className='text-sm'>{elem.Sector}</p>
                                 <p className='text-xl font-bold '>{elem.value}</p>

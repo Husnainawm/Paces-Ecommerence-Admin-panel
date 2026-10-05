@@ -36,7 +36,7 @@ const countries = [
 
 const RevenueByLocations = () => {
   return (
-    <div className="bg-backCol rounded-lg text-gray-300 w-full lg:w-[48%] xl:w-[29%]">
+    <div className="bg-backCol rounded-lg text-gray-300 w-full">
       {/* Header */}
       <div className="flex justify-between items-center px-6 py-5 border-b border-dashed border-gray-700">
         <p className="font-medium">Revenue By Locations</p>
