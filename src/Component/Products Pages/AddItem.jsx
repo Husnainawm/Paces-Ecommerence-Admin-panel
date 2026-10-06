@@ -5,7 +5,7 @@ import AddProductSectionTwo from './AddProductSectionTwo'
 const AddItem1 = () => {
   return (
     <>
-    <div className='grid gap-3 mt-5 grid-cols-[63%_auto]'>
+    <div className='grid gap-3 mt-5 lg:grid-cols-[63%_auto]'>
       <AddProductSectionOne/>
       <AddProductSectionTwo/>
     </div>
